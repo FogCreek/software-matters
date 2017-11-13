@@ -1,0 +1,44 @@
+{{#if success}}
+<div class="message message-success">
+  <p>
+    Thanks!  We've signed you up for Software Matters!  If you haven't already configured the project and area where you'd like content to be delivered, you can do that using the gear icon on the "Software Matters" tile of your integrations page.
+  </p>
+  <a href="https://{{site}}/f/integrations"><button class="btn message-button">Take me there!</button></a>
+</div>
+
+{{/if}}
+{{#if error}}
+  <div class="message message-failure">
+    <p>
+      Hmm.  Something's gone wrong.  In order to enroll in this integration, you must be a Manuscript administrator.  You can click the "Software Matters" tile on your integrations page.
+    </p>
+    <a href="https://{{site}}/f/integrations"><button class="btn message-button">Take me there!</button></a>
+  </div>
+{{/if}}    
+    
+    
+
+
+<div id="content">
+  <div id="top-straight"></div>
+  <div id="top-diagonal"><h1> Software Matters</h1></div>
+  <div id="middle-straight">
+  <div id="middle-content">
+  <img src="https://cdn.glitch.com/5607fee3-4e06-44cf-aea7-3fcad360992f%2Fmanuscript-logo-mark.svg?1510105981529">
+  <div id="paragraphs">
+  <p>
+    We know every team can craft great software.  You just need the <span class="emphasis">best tools</span> and the <span class="emphasis">right information</span>. Software Matters helps with the latter, by providing expert advice and insights learned from two decades of studying how great software really gets built.
+  </p>
+  <p>
+  Articles covering everything from software development best practices to data privacy and security are delivered regularly as cases, directly in Manuscript, making them easy to share and discuss with the relevant folks on your team.
+  </p>
+  {{#unless post}}
+  <p>To subscribe, visit the the integrations page on your Manuscript site and click the "Software Matters" integration tile.</p>
+  {{/unless}}
+</div>
+</div>
+</div>
+<div id="middle-diagonal"></div>
+<div id="bottom-diagonal"></div>
+<div id="bottom-straight"> </div>
+
