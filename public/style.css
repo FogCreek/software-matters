@@ -1,0 +1,167 @@
+/* styles */
+/* called by your view template */
+
+/* You might want to try something fancier: */
+/* less: http://lesscss.org/ */
+@import url("https://cdn.glitch.com/b6a2fe4b-e1a7-452f-afc3-d2f9ac9417f3%2FBentonSans-Regular.otf?1507134020174");
+* {
+  box-sizing: border-box;
+  --pink: #F1A5FF;
+  --blue: #1740e6;
+  --purple: #944DFF;
+  --red: #F55356;
+  --yellow: #F7D331;
+  --green: #54D182;
+  --teal: #00CDD6;
+  --black: #060628;
+  --darkgray: #828293;
+  --medgray: #45455E;
+  --lightgray: #DFDFE6;
+}
+
+
+* {
+  box-sizing: border-box;
+  font-family: BentonSans;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--green)
+}
+
+#content {
+  min-height: 800px;
+  overflow: hidden;
+}
+
+.message {
+  width: 100%;
+  padding: 1em 2em;
+  color: white;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.message.message-success {
+  background-color: var(--green);
+}
+
+.message.message-failure {
+  background-color: var(--red);
+}
+
+.message p {
+  width: 80%;
+  margin: 0px;
+  display: inline-block;
+}
+
+.message button {
+  
+}
+
+#middle-content {
+  padding: 2em;
+  margin: auto;
+  width: 50%;
+/*   background-color: var(--blue); */
+  color: var(--black);
+  border-radius: 20px;
+} 
+
+#middle-content img {
+  float: left;
+  margin-right: 2em;
+}
+
+.emphasis {
+  font-style: italic;
+/*   color: var(--pink) */
+}
+
+#top-straight {
+  width: 100%;
+  height: 100px;
+  background-color: var(--teal);
+  z-index: -20;
+}
+#top-diagonal {
+  background-color: var(--teal);
+  color:white;
+/*   display:block; */
+  float:left;
+  height: 200px;
+  margin:-100px auto;
+  width:100%;
+  padding:0 5%;
+  transform:skew(0deg,-5deg);
+-ms-transform:skew(0deg,-10deg);
+-webkit-transform:skew(0deg,-5deg); 
+  border-bottom: 20px solid var(--red)
+  
+}
+
+#middle-straight {
+  display:flex;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  padding-top: 200px;
+  maragin-top: -200px;
+}
+#middle-diagonal {
+  z-index:-40;
+  position:relative;
+/*   bottom: 100px; */
+  background-color: white;
+  display:block;
+  float:left;
+  height: 200px;
+  margin:-100px auto 100px;
+  width:100%;
+  padding:0 5%;
+  transform:skew(0deg,-5deg);
+-ms-transform:skew(0deg,-10deg);
+-webkit-transform:skew(0deg,-5deg); 
+  border-bottom: 20px solid var(--purple);
+  overflow: hidden;
+  
+}
+
+#bottom-straight {
+  position:relative;
+  bottom: 0;
+  width: 100%;
+  height: 400px;
+  background-color: var(--green);
+  z-index: -50;
+  margin-top:-150px;
+}
+
+
+#top-diagonal h1 {
+  margin-top: 130px;
+}
+
+@media (max-width: 800px) {
+  #middle-content {
+    width: 100%;
+    padding: 2em;
+  }
+}
+
+@media (max-width: 630px) {
+  #top-diagonal h1 {
+/*     font-size: 2em; */
+  }
+}
+
+@media (max-width: 500px) {
+
+  #middle-content{
+    padding: 1em;
+  }
+}
